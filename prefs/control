@@ -1,0 +1,12 @@
+Package: com.alexpng.shake2toggle
+Name: Shake2Toggle
+Depends: mobilesubstrate, applist
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Control your device with shakes.
+Depiction: https://alexpng.github.io/depictions/com.alexpng.shake2toggle/
+SileoDepiction: https://alexpng.github.io/depictions/com.alexpng.shake2toggle/shake2toggle.json
+Icon: https://alexpng.github.io/depictions/com.alexpng.shake2toggle/DebIcon.png
+Maintainer: alex_png <alex.png.cc@gmail.com>
+Author: alex_png <alex.png.cc@gmail.com>
+Section: Tweaks

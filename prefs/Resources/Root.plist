@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Shake2Toggle by alex_png</string>
+		</dict>
+		<dict>
+			<key>alignment</key>
+			<string>0</string>
+			<key>background</key>
+			<string>#EFEFF4</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>cellClass</key>
+			<string>PFHeaderCell</string>
+			<key>height</key>
+			<integer>165</integer>
+			<key>icon</key>
+			<string>banner.png</string>
+		</dict>
+ <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Application Toggles</string>
+				<key>footerText</key>
+				<string>Enable this option and select an application if you want your device to open the selected application when you shake it. Please note that you must have this option enabled and an application selected in order for it to work. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+		<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useApplication</string>
+			<key>label</key>
+			<string>Open Selected Application</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>bundle</key>
+		<string>AppList</string>
+		<key>isController</key>
+		<string>1</string>
+		<key>label</key>
+		<string>Select Application</string>
+		<key>icon</key>
+		<string></string>
+		<key>ALSettingsKey</key>
+		<string>app</string>
+		<key>ALSettingsPath</key>
+		<string>/var/mobile/Library/Preferences/com.alexpng.shake2toggle</string>
+		<key>ALSingleEnabledMode</key>
+		<string>1</string>
+		<key>ALChangeNotification</key>
+		<string>com.alexpng.shake2toggle/saved</string>
+		<key>ALSectionDescriptors</key>
+		<array>
+		<dict>
+		<key>cell-class-name</key>
+		<string>ALSwitchCell</string>
+		<key>predicate</key>
+		<string>isSystemApplication = TRUE</string>
+		<key>icon-size</key>
+		<string>29</string>
+		<key>suppress-hidden-apps</key>
+		<string>1</string>
+		<key>title</key>
+		<string>System Applications</string>
+		</dict>
+		<dict>
+		<key>cell-class-name</key>
+		<string>ALSwitchCell</string>
+		<key>predicate</key>
+		<string>isSystemApplication = FALSE</string>
+		<key>icon-size</key>
+		<string>29</string>
+		<key>suppress-hidden-apps</key>
+		<string>1</string>
+		<key>title</key>
+		<string>User Applications</string>
+		</dict>
+		</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to play/pause your song/video when you shake your device. You don’t need to respring in order to apply the changes.</string>
+			<key>label</key>
+			<string>Music and Video Toggles</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>	<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+	<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>usePlayPause</string>
+			<key>label</key>
+			<string>Play/Pause Songs and Videos</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to shuffle/unshuffle your songs/playlist when you shake your device. This option is not compatible with Spotify. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useToggleShuffle</string>
+			<key>label</key>
+			<string>Shuffle Songs/Playlists</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to repeat/unrepeat your songs when you shake your device. This option is not compatible with Spotify. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useToggleRepeat</string>
+			<key>label</key>
+			<string>Repeat Songs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to skip to the next song when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useNextTrack</string>
+			<key>label</key>
+			<string>Next Song/Video</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to give a Like to a song when you shake your device. Please note that enabling this won’t display the “Liked Song” window in Apple Music, but it will add a Like to the song. This option is not compatible with Spotify. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useLikeTrack</string>
+			<key>label</key>
+			<string>Like Songs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want Dark Mode to toggle on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+			<key>label</key>
+			<string>Miscellaneous Toggles</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useDarkMode</string>
+			<key>label</key>
+			<string>Dark Mode (iOS 13)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want Night Shift to toggle on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useNightShift</string>
+			<key>label</key>
+			<string>Night Shift</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want the Flashlight to toggle on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useFlashlight</string>
+			<key>label</key>
+			<string>Flashlight</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to lock your device when you shake it. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useLockDevice</string>
+			<key>label</key>
+			<string>Lock Device</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to take a screenshot when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useScreenshot</string>
+			<key>label</key>
+			<string>Take Screenshot</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to turn Portrait mode on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>usePortraitLock</string>
+			<key>label</key>
+			<string>Lock/Unlock Portrait Mode</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to turn Low Power Mode on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useLPM</string>
+			<key>label</key>
+			<string>Low Power Mode</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want to turn Do Not Disturb on/off when you shake your device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>useDND</string>
+			<key>label</key>
+			<string>Do Not Disturb</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable this option if you want a Power Menu to appear when you shake your device. In the menu you have the options to Respring Device, Enter Safe Mode, Run UICache, Reboot Device and Power Off Device. You don’t need to respring in order to apply the changes.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.alexpng.shake2toggle.prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.alexpng.shake2toggle</string>
+			<key>key</key>
+			<string>usePowerMenu</string>
+			<key>label</key>
+			<string>Power Menu</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Feel free to contact me in case of any bugs or issues.</string>
+			<key>label</key>
+			<string>Contact Me:</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Twitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>label</key>
+			<string>@its_alex_png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Reddit</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>reddit.png</string>
+			<key>label</key>
+			<string>/u/alex_png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>GitHub</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>github.png</string>
+			<key>label</key>
+			<string>github.com/alexPNG</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Email</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>email.png</string>
+			<key>label</key>
+			<string>alex.png.cc@gmail.com</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Support me and my work in case you appreciate it and would like to support me.</string>
+			<key>label</key>
+			<string>Support My Work:</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>PayPal</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>label</key>
+			<string>paypal.me/devalexpng</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Check out my other tweaks, they’re all available in my repository.</string>
+			<key>label</key>
+			<string>Tweak Repository:</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Repository</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>repo.png</string>
+			<key>label</key>
+			<string>https://alexpng.github.io</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Shake2Toggle by alex_png</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Shake2Toggle</string>
+</dict>
+</plist>
