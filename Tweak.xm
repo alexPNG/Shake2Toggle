@@ -410,7 +410,7 @@ UIAlertAction* powerOffButton = [UIAlertAction
 actionWithTitle:@"Power Off Device"
 style:UIAlertActionStyleDefault
 handler:^(UIAlertAction * action) {
-restart();
+powerOff();
 }];
 
 // Cancel Button
